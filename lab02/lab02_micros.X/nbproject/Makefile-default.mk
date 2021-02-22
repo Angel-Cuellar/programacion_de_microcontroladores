@@ -29,12 +29,12 @@ CND_CONF=default
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
 IMAGE_TYPE=debug
 OUTPUT_SUFFIX=hex
-DEBUGGABLE_SUFFIX=hex
+DEBUGGABLE_SUFFIX=elf
 FINAL_IMAGE=dist/${CND_CONF}/${IMAGE_TYPE}/lab02_micros.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
 else
 IMAGE_TYPE=production
 OUTPUT_SUFFIX=hex
-DEBUGGABLE_SUFFIX=hex
+DEBUGGABLE_SUFFIX=elf
 FINAL_IMAGE=dist/${CND_CONF}/${IMAGE_TYPE}/lab02_micros.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
 endif
 
@@ -100,7 +100,7 @@ ${OBJECTDIR}/contador1.o: contador1.s  nbproject/Makefile-${CND_CONF}.mk
 	${MP_AS} -mcpu=PIC16F887 -c \
 	-o ${OBJECTDIR}/contador1.o \
 	contador1.s \
-	 -misa=std -msummary=+mem,-psect,-class,-hex,-file,-sha1,-sha256,-xml,-xmlfull -fmax-errors=20 -mwarn=0 -xassembler-with-cpp
+	 -msummary=+mem,-psect,-class,-hex,-file,-sha1,-sha256,-xml,-xmlfull -fmax-errors=20 -mwarn=0 -xassembler-with-cpp
 	
 else
 ${OBJECTDIR}/contador1.o: contador1.s  nbproject/Makefile-${CND_CONF}.mk
@@ -109,7 +109,7 @@ ${OBJECTDIR}/contador1.o: contador1.s  nbproject/Makefile-${CND_CONF}.mk
 	${MP_AS} -mcpu=PIC16F887 -c \
 	-o ${OBJECTDIR}/contador1.o \
 	contador1.s \
-	 -misa=std -msummary=+mem,-psect,-class,-hex,-file,-sha1,-sha256,-xml,-xmlfull -fmax-errors=20 -mwarn=0 -xassembler-with-cpp
+	 -msummary=+mem,-psect,-class,-hex,-file,-sha1,-sha256,-xml,-xmlfull -fmax-errors=20 -mwarn=0 -xassembler-with-cpp
 	
 endif
 
@@ -120,13 +120,13 @@ dist/${CND_CONF}/${IMAGE_TYPE}/lab02_micros.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}: ${
 	@${MKDIR} dist/${CND_CONF}/${IMAGE_TYPE} 
 	${MP_LD} -mcpu=PIC16F887 ${OBJECTFILES_QUOTED_IF_SPACED} \
 	-o dist/${CND_CONF}/${IMAGE_TYPE}/lab02_micros.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX} \
-	 -misa=std -msummary=+mem,-psect,-class,-hex,-file,-sha1,-sha256,-xml,-xmlfull -mcallgraph=std -mno-download-hex -gdwarf-3
+	 -msummary=+mem,-psect,-class,-hex,-file,-sha1,-sha256,-xml,-xmlfull -mcallgraph=std -mno-download-hex
 else
 dist/${CND_CONF}/${IMAGE_TYPE}/lab02_micros.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}: ${OBJECTFILES}  nbproject/Makefile-${CND_CONF}.mk   
 	@${MKDIR} dist/${CND_CONF}/${IMAGE_TYPE} 
 	${MP_LD} -mcpu=PIC16F887 ${OBJECTFILES_QUOTED_IF_SPACED} \
 	-o dist/${CND_CONF}/${IMAGE_TYPE}/lab02_micros.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX} \
-	 -misa=std -msummary=+mem,-psect,-class,-hex,-file,-sha1,-sha256,-xml,-xmlfull -mcallgraph=std -mno-download-hex -gdwarf-3
+	 -msummary=+mem,-psect,-class,-hex,-file,-sha1,-sha256,-xml,-xmlfull -mcallgraph=std -mno-download-hex
 endif
 
 
