@@ -12,7 +12,7 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
-      <itemPath>main.s</itemPath>
+      <itemPath>lab04_main.s</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -555,10 +555,8 @@
         <property key="linker-libraries" value=""/>
         <property key="linker-library-search-paths" value=""/>
         <property key="linker-maxi-chip" value="false"/>
-        <property key="linker-produce-elf-dwarf-output" value="true"/>
         <property key="linker-produce-intel-hex-extended-address-zero-output"
                   value="false"/>
-        <property key="linker-produce-intel-hex-output" value="false"/>
         <property key="linker-ram" value=""/>
         <property key="linker-reserve" value=""/>
         <property key="linker-rom" value=""/>
