@@ -33,7 +33,7 @@ dataBANK2 BANK2 1 110 110 28 1
 dataBANK3 BANK3 1 190 190 5F 1
 bssCOMMON COMMON 1 76 76 4 1
 config CONFIG 4 2007 2007 2 2
-$C:\Users\angel\AppData\Local\Temp\shoc.o
+$C:\Users\angel\AppData\Local\Temp\s4q4.o
 reset_vec CODE 0 0 0 3 2
 end_init CODE 0 C C 3 2
 config CONFIG 4 2007 2007 2 2
@@ -88,64 +88,64 @@ STRING 1000-1FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\proyecto02.X.production.o
-F cinit CODE >860:C:\Users\angel\AppData\Local\Temp\shoc.s
-F cinit CODE >863:C:\Users\angel\AppData\Local\Temp\shoc.s
-F cinit CODE >1027:C:\Users\angel\AppData\Local\Temp\shoc.s
-10 cinit CODE >1028:C:\Users\angel\AppData\Local\Temp\shoc.s
-11 cinit CODE >1029:C:\Users\angel\AppData\Local\Temp\shoc.s
-12 cinit CODE >1030:C:\Users\angel\AppData\Local\Temp\shoc.s
-13 cinit CODE >1031:C:\Users\angel\AppData\Local\Temp\shoc.s
-14 cinit CODE >1032:C:\Users\angel\AppData\Local\Temp\shoc.s
-15 cinit CODE >1033:C:\Users\angel\AppData\Local\Temp\shoc.s
-16 cinit CODE >1034:C:\Users\angel\AppData\Local\Temp\shoc.s
-17 cinit CODE >1035:C:\Users\angel\AppData\Local\Temp\shoc.s
-18 cinit CODE >1036:C:\Users\angel\AppData\Local\Temp\shoc.s
-1D cinit CODE >1040:C:\Users\angel\AppData\Local\Temp\shoc.s
-1E cinit CODE >1041:C:\Users\angel\AppData\Local\Temp\shoc.s
-1F cinit CODE >1042:C:\Users\angel\AppData\Local\Temp\shoc.s
-20 cinit CODE >1043:C:\Users\angel\AppData\Local\Temp\shoc.s
-21 cinit CODE >1044:C:\Users\angel\AppData\Local\Temp\shoc.s
-22 cinit CODE >1045:C:\Users\angel\AppData\Local\Temp\shoc.s
-23 cinit CODE >1046:C:\Users\angel\AppData\Local\Temp\shoc.s
-24 cinit CODE >1047:C:\Users\angel\AppData\Local\Temp\shoc.s
-25 cinit CODE >1048:C:\Users\angel\AppData\Local\Temp\shoc.s
-2A cinit CODE >1052:C:\Users\angel\AppData\Local\Temp\shoc.s
-2B cinit CODE >1053:C:\Users\angel\AppData\Local\Temp\shoc.s
-2C cinit CODE >1054:C:\Users\angel\AppData\Local\Temp\shoc.s
-2D cinit CODE >1055:C:\Users\angel\AppData\Local\Temp\shoc.s
-2E cinit CODE >1056:C:\Users\angel\AppData\Local\Temp\shoc.s
-2F cinit CODE >1057:C:\Users\angel\AppData\Local\Temp\shoc.s
-30 cinit CODE >1058:C:\Users\angel\AppData\Local\Temp\shoc.s
-31 cinit CODE >1059:C:\Users\angel\AppData\Local\Temp\shoc.s
-32 cinit CODE >1060:C:\Users\angel\AppData\Local\Temp\shoc.s
-33 cinit CODE >1061:C:\Users\angel\AppData\Local\Temp\shoc.s
-38 cinit CODE >1065:C:\Users\angel\AppData\Local\Temp\shoc.s
-39 cinit CODE >1066:C:\Users\angel\AppData\Local\Temp\shoc.s
-3A cinit CODE >1067:C:\Users\angel\AppData\Local\Temp\shoc.s
-3B cinit CODE >1068:C:\Users\angel\AppData\Local\Temp\shoc.s
-3C cinit CODE >1069:C:\Users\angel\AppData\Local\Temp\shoc.s
-3D cinit CODE >1070:C:\Users\angel\AppData\Local\Temp\shoc.s
-3E cinit CODE >1071:C:\Users\angel\AppData\Local\Temp\shoc.s
-3F cinit CODE >1072:C:\Users\angel\AppData\Local\Temp\shoc.s
-40 cinit CODE >1073:C:\Users\angel\AppData\Local\Temp\shoc.s
-45 cinit CODE >1077:C:\Users\angel\AppData\Local\Temp\shoc.s
-46 cinit CODE >1078:C:\Users\angel\AppData\Local\Temp\shoc.s
-47 cinit CODE >1079:C:\Users\angel\AppData\Local\Temp\shoc.s
-48 cinit CODE >1080:C:\Users\angel\AppData\Local\Temp\shoc.s
-49 cinit CODE >1081:C:\Users\angel\AppData\Local\Temp\shoc.s
-4A cinit CODE >1082:C:\Users\angel\AppData\Local\Temp\shoc.s
-4B cinit CODE >1083:C:\Users\angel\AppData\Local\Temp\shoc.s
-4C cinit CODE >1084:C:\Users\angel\AppData\Local\Temp\shoc.s
-4D cinit CODE >1085:C:\Users\angel\AppData\Local\Temp\shoc.s
-4E cinit CODE >1086:C:\Users\angel\AppData\Local\Temp\shoc.s
-4F cinit CODE >1087:C:\Users\angel\AppData\Local\Temp\shoc.s
-50 cinit CODE >1090:C:\Users\angel\AppData\Local\Temp\shoc.s
-51 cinit CODE >1091:C:\Users\angel\AppData\Local\Temp\shoc.s
-52 cinit CODE >1092:C:\Users\angel\AppData\Local\Temp\shoc.s
-53 cinit CODE >1093:C:\Users\angel\AppData\Local\Temp\shoc.s
-54 cinit CODE >1099:C:\Users\angel\AppData\Local\Temp\shoc.s
-54 cinit CODE >1101:C:\Users\angel\AppData\Local\Temp\shoc.s
-55 cinit CODE >1102:C:\Users\angel\AppData\Local\Temp\shoc.s
+F cinit CODE >860:C:\Users\angel\AppData\Local\Temp\s4q4.s
+F cinit CODE >863:C:\Users\angel\AppData\Local\Temp\s4q4.s
+F cinit CODE >1027:C:\Users\angel\AppData\Local\Temp\s4q4.s
+10 cinit CODE >1028:C:\Users\angel\AppData\Local\Temp\s4q4.s
+11 cinit CODE >1029:C:\Users\angel\AppData\Local\Temp\s4q4.s
+12 cinit CODE >1030:C:\Users\angel\AppData\Local\Temp\s4q4.s
+13 cinit CODE >1031:C:\Users\angel\AppData\Local\Temp\s4q4.s
+14 cinit CODE >1032:C:\Users\angel\AppData\Local\Temp\s4q4.s
+15 cinit CODE >1033:C:\Users\angel\AppData\Local\Temp\s4q4.s
+16 cinit CODE >1034:C:\Users\angel\AppData\Local\Temp\s4q4.s
+17 cinit CODE >1035:C:\Users\angel\AppData\Local\Temp\s4q4.s
+18 cinit CODE >1036:C:\Users\angel\AppData\Local\Temp\s4q4.s
+1D cinit CODE >1040:C:\Users\angel\AppData\Local\Temp\s4q4.s
+1E cinit CODE >1041:C:\Users\angel\AppData\Local\Temp\s4q4.s
+1F cinit CODE >1042:C:\Users\angel\AppData\Local\Temp\s4q4.s
+20 cinit CODE >1043:C:\Users\angel\AppData\Local\Temp\s4q4.s
+21 cinit CODE >1044:C:\Users\angel\AppData\Local\Temp\s4q4.s
+22 cinit CODE >1045:C:\Users\angel\AppData\Local\Temp\s4q4.s
+23 cinit CODE >1046:C:\Users\angel\AppData\Local\Temp\s4q4.s
+24 cinit CODE >1047:C:\Users\angel\AppData\Local\Temp\s4q4.s
+25 cinit CODE >1048:C:\Users\angel\AppData\Local\Temp\s4q4.s
+2A cinit CODE >1052:C:\Users\angel\AppData\Local\Temp\s4q4.s
+2B cinit CODE >1053:C:\Users\angel\AppData\Local\Temp\s4q4.s
+2C cinit CODE >1054:C:\Users\angel\AppData\Local\Temp\s4q4.s
+2D cinit CODE >1055:C:\Users\angel\AppData\Local\Temp\s4q4.s
+2E cinit CODE >1056:C:\Users\angel\AppData\Local\Temp\s4q4.s
+2F cinit CODE >1057:C:\Users\angel\AppData\Local\Temp\s4q4.s
+30 cinit CODE >1058:C:\Users\angel\AppData\Local\Temp\s4q4.s
+31 cinit CODE >1059:C:\Users\angel\AppData\Local\Temp\s4q4.s
+32 cinit CODE >1060:C:\Users\angel\AppData\Local\Temp\s4q4.s
+33 cinit CODE >1061:C:\Users\angel\AppData\Local\Temp\s4q4.s
+38 cinit CODE >1065:C:\Users\angel\AppData\Local\Temp\s4q4.s
+39 cinit CODE >1066:C:\Users\angel\AppData\Local\Temp\s4q4.s
+3A cinit CODE >1067:C:\Users\angel\AppData\Local\Temp\s4q4.s
+3B cinit CODE >1068:C:\Users\angel\AppData\Local\Temp\s4q4.s
+3C cinit CODE >1069:C:\Users\angel\AppData\Local\Temp\s4q4.s
+3D cinit CODE >1070:C:\Users\angel\AppData\Local\Temp\s4q4.s
+3E cinit CODE >1071:C:\Users\angel\AppData\Local\Temp\s4q4.s
+3F cinit CODE >1072:C:\Users\angel\AppData\Local\Temp\s4q4.s
+40 cinit CODE >1073:C:\Users\angel\AppData\Local\Temp\s4q4.s
+45 cinit CODE >1077:C:\Users\angel\AppData\Local\Temp\s4q4.s
+46 cinit CODE >1078:C:\Users\angel\AppData\Local\Temp\s4q4.s
+47 cinit CODE >1079:C:\Users\angel\AppData\Local\Temp\s4q4.s
+48 cinit CODE >1080:C:\Users\angel\AppData\Local\Temp\s4q4.s
+49 cinit CODE >1081:C:\Users\angel\AppData\Local\Temp\s4q4.s
+4A cinit CODE >1082:C:\Users\angel\AppData\Local\Temp\s4q4.s
+4B cinit CODE >1083:C:\Users\angel\AppData\Local\Temp\s4q4.s
+4C cinit CODE >1084:C:\Users\angel\AppData\Local\Temp\s4q4.s
+4D cinit CODE >1085:C:\Users\angel\AppData\Local\Temp\s4q4.s
+4E cinit CODE >1086:C:\Users\angel\AppData\Local\Temp\s4q4.s
+4F cinit CODE >1087:C:\Users\angel\AppData\Local\Temp\s4q4.s
+50 cinit CODE >1090:C:\Users\angel\AppData\Local\Temp\s4q4.s
+51 cinit CODE >1091:C:\Users\angel\AppData\Local\Temp\s4q4.s
+52 cinit CODE >1092:C:\Users\angel\AppData\Local\Temp\s4q4.s
+53 cinit CODE >1093:C:\Users\angel\AppData\Local\Temp\s4q4.s
+54 cinit CODE >1099:C:\Users\angel\AppData\Local\Temp\s4q4.s
+54 cinit CODE >1101:C:\Users\angel\AppData\Local\Temp\s4q4.s
+55 cinit CODE >1102:C:\Users\angel\AppData\Local\Temp\s4q4.s
 4 intentry CODE >70:C:\Users\angel\OneDrive\Documentos\programa_micros\programacion_de_microcontroladores\proyecto02\proyecto02.X\pro_02_main.c
 5FF text4 CODE >70:C:\Users\angel\OneDrive\Documentos\programa_micros\programacion_de_microcontroladores\proyecto02\proyecto02.X\pro_02_main.c
 5FF text4 CODE >72:C:\Users\angel\OneDrive\Documentos\programa_micros\programacion_de_microcontroladores\proyecto02\proyecto02.X\pro_02_main.c
@@ -456,32 +456,32 @@ F2 maintext CODE >246:C:\Users\angel\OneDrive\Documentos\programa_micros\program
 5C7 maintext CODE >453:C:\Users\angel\OneDrive\Documentos\programa_micros\programacion_de_microcontroladores\proyecto02\proyecto02.X\pro_02_main.c
 5CB maintext CODE >455:C:\Users\angel\OneDrive\Documentos\programa_micros\programacion_de_microcontroladores\proyecto02\proyecto02.X\pro_02_main.c
 5CF maintext CODE >456:C:\Users\angel\OneDrive\Documentos\programa_micros\programacion_de_microcontroladores\proyecto02\proyecto02.X\pro_02_main.c
-5D6 maintext CODE >457:C:\Users\angel\OneDrive\Documentos\programa_micros\programacion_de_microcontroladores\proyecto02\proyecto02.X\pro_02_main.c
-5DD maintext CODE >458:C:\Users\angel\OneDrive\Documentos\programa_micros\programacion_de_microcontroladores\proyecto02\proyecto02.X\pro_02_main.c
-5E1 maintext CODE >459:C:\Users\angel\OneDrive\Documentos\programa_micros\programacion_de_microcontroladores\proyecto02\proyecto02.X\pro_02_main.c
-5E2 maintext CODE >460:C:\Users\angel\OneDrive\Documentos\programa_micros\programacion_de_microcontroladores\proyecto02\proyecto02.X\pro_02_main.c
-5E3 maintext CODE >461:C:\Users\angel\OneDrive\Documentos\programa_micros\programacion_de_microcontroladores\proyecto02\proyecto02.X\pro_02_main.c
-5E4 maintext CODE >463:C:\Users\angel\OneDrive\Documentos\programa_micros\programacion_de_microcontroladores\proyecto02\proyecto02.X\pro_02_main.c
-5E6 maintext CODE >464:C:\Users\angel\OneDrive\Documentos\programa_micros\programacion_de_microcontroladores\proyecto02\proyecto02.X\pro_02_main.c
-5E7 maintext CODE >465:C:\Users\angel\OneDrive\Documentos\programa_micros\programacion_de_microcontroladores\proyecto02\proyecto02.X\pro_02_main.c
-5E9 maintext CODE >469:C:\Users\angel\OneDrive\Documentos\programa_micros\programacion_de_microcontroladores\proyecto02\proyecto02.X\pro_02_main.c
-F7E inittext CODE >1001:C:\Users\angel\AppData\Local\Temp\shoc.s
-F7E inittext CODE >1002:C:\Users\angel\AppData\Local\Temp\shoc.s
-F7F inittext CODE >1003:C:\Users\angel\AppData\Local\Temp\shoc.s
-F80 inittext CODE >1004:C:\Users\angel\AppData\Local\Temp\shoc.s
-F81 inittext CODE >1005:C:\Users\angel\AppData\Local\Temp\shoc.s
-F82 inittext CODE >1012:C:\Users\angel\AppData\Local\Temp\shoc.s
-F82 inittext CODE >1013:C:\Users\angel\AppData\Local\Temp\shoc.s
-F87 inittext CODE >1014:C:\Users\angel\AppData\Local\Temp\shoc.s
-F88 inittext CODE >1015:C:\Users\angel\AppData\Local\Temp\shoc.s
-F89 inittext CODE >1016:C:\Users\angel\AppData\Local\Temp\shoc.s
-F8A inittext CODE >1017:C:\Users\angel\AppData\Local\Temp\shoc.s
-F8B inittext CODE >1018:C:\Users\angel\AppData\Local\Temp\shoc.s
-F8C inittext CODE >1019:C:\Users\angel\AppData\Local\Temp\shoc.s
-F8D inittext CODE >1020:C:\Users\angel\AppData\Local\Temp\shoc.s
-F8E inittext CODE >1021:C:\Users\angel\AppData\Local\Temp\shoc.s
-F8F inittext CODE >1022:C:\Users\angel\AppData\Local\Temp\shoc.s
-F90 inittext CODE >1023:C:\Users\angel\AppData\Local\Temp\shoc.s
+5D6 maintext CODE >458:C:\Users\angel\OneDrive\Documentos\programa_micros\programacion_de_microcontroladores\proyecto02\proyecto02.X\pro_02_main.c
+5DD maintext CODE >459:C:\Users\angel\OneDrive\Documentos\programa_micros\programacion_de_microcontroladores\proyecto02\proyecto02.X\pro_02_main.c
+5E1 maintext CODE >460:C:\Users\angel\OneDrive\Documentos\programa_micros\programacion_de_microcontroladores\proyecto02\proyecto02.X\pro_02_main.c
+5E2 maintext CODE >461:C:\Users\angel\OneDrive\Documentos\programa_micros\programacion_de_microcontroladores\proyecto02\proyecto02.X\pro_02_main.c
+5E3 maintext CODE >462:C:\Users\angel\OneDrive\Documentos\programa_micros\programacion_de_microcontroladores\proyecto02\proyecto02.X\pro_02_main.c
+5E4 maintext CODE >464:C:\Users\angel\OneDrive\Documentos\programa_micros\programacion_de_microcontroladores\proyecto02\proyecto02.X\pro_02_main.c
+5E6 maintext CODE >465:C:\Users\angel\OneDrive\Documentos\programa_micros\programacion_de_microcontroladores\proyecto02\proyecto02.X\pro_02_main.c
+5E7 maintext CODE >466:C:\Users\angel\OneDrive\Documentos\programa_micros\programacion_de_microcontroladores\proyecto02\proyecto02.X\pro_02_main.c
+5E9 maintext CODE >470:C:\Users\angel\OneDrive\Documentos\programa_micros\programacion_de_microcontroladores\proyecto02\proyecto02.X\pro_02_main.c
+F7E inittext CODE >1001:C:\Users\angel\AppData\Local\Temp\s4q4.s
+F7E inittext CODE >1002:C:\Users\angel\AppData\Local\Temp\s4q4.s
+F7F inittext CODE >1003:C:\Users\angel\AppData\Local\Temp\s4q4.s
+F80 inittext CODE >1004:C:\Users\angel\AppData\Local\Temp\s4q4.s
+F81 inittext CODE >1005:C:\Users\angel\AppData\Local\Temp\s4q4.s
+F82 inittext CODE >1012:C:\Users\angel\AppData\Local\Temp\s4q4.s
+F82 inittext CODE >1013:C:\Users\angel\AppData\Local\Temp\s4q4.s
+F87 inittext CODE >1014:C:\Users\angel\AppData\Local\Temp\s4q4.s
+F88 inittext CODE >1015:C:\Users\angel\AppData\Local\Temp\s4q4.s
+F89 inittext CODE >1016:C:\Users\angel\AppData\Local\Temp\s4q4.s
+F8A inittext CODE >1017:C:\Users\angel\AppData\Local\Temp\s4q4.s
+F8B inittext CODE >1018:C:\Users\angel\AppData\Local\Temp\s4q4.s
+F8C inittext CODE >1019:C:\Users\angel\AppData\Local\Temp\s4q4.s
+F8D inittext CODE >1020:C:\Users\angel\AppData\Local\Temp\s4q4.s
+F8E inittext CODE >1021:C:\Users\angel\AppData\Local\Temp\s4q4.s
+F8F inittext CODE >1022:C:\Users\angel\AppData\Local\Temp\s4q4.s
+F90 inittext CODE >1023:C:\Users\angel\AppData\Local\Temp\s4q4.s
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -519,13 +519,13 @@ _T0IF 5A 0 ABS 0 - dist/default/production\proyecto02.X.production.o
 _TMR0 1 0 ABS 0 - dist/default/production\proyecto02.X.production.o
 _TXIF 64 0 ABS 0 - dist/default/production\proyecto02.X.production.o
 _WPUB 95 0 ABS 0 - dist/default/production\proyecto02.X.production.o
-___sp 0 0 STACK 2 stack C:\Users\angel\AppData\Local\Temp\shoc.o
+___sp 0 0 STACK 2 stack C:\Users\angel\AppData\Local\Temp\s4q4.o
 _cont 63 0 BANK0 1 bssBANK0 dist/default/production\proyecto02.X.production.o
 _giro 190 0 BANK3 1 dataBANK3 dist/default/production\proyecto02.X.production.o
 _left 35 0 BANK0 1 dataBANK0 dist/default/production\proyecto02.X.production.o
 _main B0 0 CODE 0 maintext dist/default/production\proyecto02.X.production.o
 btemp 7E 0 ABS 0 - dist/default/production\proyecto02.X.production.o
-start 18 0 CODE 0 init C:\Users\angel\AppData\Local\Temp\shoc.o
+start 18 0 CODE 0 init C:\Users\angel\AppData\Local\Temp\s4q4.o
 __size_of___awdiv 0 0 ABS 0 - dist/default/production\proyecto02.X.production.o
 __size_of_main 0 0 ABS 0 - dist/default/production\proyecto02.X.production.o
 __HbssCOMMON 0 0 ABS 0 bssCOMMON -
@@ -536,12 +536,12 @@ __LidataBANK1 0 0 ABS 0 idataBANK1 -
 __LidataBANK2 0 0 ABS 0 idataBANK2 -
 __LidataBANK3 0 0 ABS 0 idataBANK3 -
 __Hpowerup 0 0 CODE 0 powerup -
-intlevel0 0 0 ENTRY 0 functab C:\Users\angel\AppData\Local\Temp\shoc.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\angel\AppData\Local\Temp\shoc.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\angel\AppData\Local\Temp\shoc.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\angel\AppData\Local\Temp\shoc.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\angel\AppData\Local\Temp\shoc.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\angel\AppData\Local\Temp\shoc.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\angel\AppData\Local\Temp\s4q4.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\angel\AppData\Local\Temp\s4q4.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\angel\AppData\Local\Temp\s4q4.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\angel\AppData\Local\Temp\s4q4.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\angel\AppData\Local\Temp\s4q4.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\angel\AppData\Local\Temp\s4q4.o
 __LbssCOMMON 0 0 ABS 0 bssCOMMON -
 _OSCCONbits 8F 0 ABS 0 - dist/default/production\proyecto02.X.production.o
 wtemp0 7E 0 ABS 0 - dist/default/production\proyecto02.X.production.o
@@ -561,14 +561,14 @@ __Lmaintext 0 0 ABS 0 maintext -
 ___awdiv@divisor 54 0 BANK0 1 cstackBANK0 dist/default/production\proyecto02.X.production.o
 __end_of___awdiv E3A 0 CODE 0 text3 dist/default/production\proyecto02.X.production.o
 ?_strlen 74 0 COMMON 1 cstackCOMMON dist/default/production\proyecto02.X.production.o
-___stackhi 0 0 ABS 0 - C:\Users\angel\AppData\Local\Temp\shoc.o
-___stacklo 0 0 ABS 0 - C:\Users\angel\AppData\Local\Temp\shoc.o
+___stackhi 0 0 ABS 0 - C:\Users\angel\AppData\Local\Temp\s4q4.o
+___stacklo 0 0 ABS 0 - C:\Users\angel\AppData\Local\Temp\s4q4.o
 _BAUDCTLbits 187 0 ABS 0 - dist/default/production\proyecto02.X.production.o
 start_initialization 1E 0 CODE 0 cinit dist/default/production\proyecto02.X.production.o
 _direccion 20 0 BANK0 1 dataBANK0 dist/default/production\proyecto02.X.production.o
 _SPBRGH 9A 0 ABS 0 - dist/default/production\proyecto02.X.production.o
 __pcstackBANK0 50 0 BANK0 1 cstackBANK0 dist/default/production\proyecto02.X.production.o
-___int_sp 0 0 STACK 2 stack C:\Users\angel\AppData\Local\Temp\shoc.o
+___int_sp 0 0 STACK 2 stack C:\Users\angel\AppData\Local\Temp\s4q4.o
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
@@ -624,7 +624,7 @@ _cambio 110 0 BANK2 1 dataBANK2 dist/default/production\proyecto02.X.production.
 saved_w 7E 0 ABS 0 - dist/default/production\proyecto02.X.production.o
 __end_of_isr D68 0 CODE 0 text4 dist/default/production\proyecto02.X.production.o
 __Lintentry 8 0 CODE 0 intentry -
-reset_vec 0 0 CODE 0 reset_vec C:\Users\angel\AppData\Local\Temp\shoc.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\angel\AppData\Local\Temp\s4q4.o
 strlen@s 74 0 COMMON 1 cstackCOMMON dist/default/production\proyecto02.X.production.o
 __pdataBANK0 20 0 BANK0 1 dataBANK0 dist/default/production\proyecto02.X.production.o
 __pdataBANK1 A0 0 BANK1 1 dataBANK1 dist/default/production\proyecto02.X.production.o

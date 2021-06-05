@@ -1,7 +1,7 @@
 
 
 Microchip MPLAB XC8 Assembler V2.31 build 20201012212115 
-                                                                                               Fri Jun 04 10:35:19 2021
+                                                                                               Fri Jun 04 21:43:22 2021
 
 Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1 
      1                           	processor	16F887
@@ -2957,7 +2957,7 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   2943  05D5  00E0               	movwf	_valor+1
   2944  05D6                     l2493:
   2945                           
-  2946                           ;pro_02_main.c: 457:             if (valor == '1') {
+  2946                           ;pro_02_main.c: 458:             if (valor == '1') {
   2947  05D6  3031               	movlw	49
   2948  05D7  065F               	xorwf	_valor,w
   2949  05D8  0460               	iorwf	_valor+1,w
@@ -2969,34 +2969,34 @@ Microchip MPLAB XC8 C Compiler v2.31 (Free license) build 20201012212115 Og1
   2955  05DD                     u2110:
   2956  05DD                     l2495:
   2957                           
-  2958                           ;pro_02_main.c: 458:                 CCP1CONbits.P1M = 0b01;
+  2958                           ;pro_02_main.c: 459:                 CCP1CONbits.P1M = 0b01;
   2959  05DD  0817               	movf	23,w	;volatile
   2960  05DE  393F               	andlw	-193
   2961  05DF  3840               	iorlw	64
   2962  05E0  0097               	movwf	23	;volatile
   2963  05E1                     l2497:
   2964                           
-  2965                           ;pro_02_main.c: 459:                 RD0 = 1;
+  2965                           ;pro_02_main.c: 460:                 RD0 = 1;
   2966  05E1  1408               	bsf	8,0	;volatile
   2967  05E2                     l2499:
   2968                           
-  2969                           ;pro_02_main.c: 460:                 RD1 = 0;
+  2969                           ;pro_02_main.c: 461:                 RD1 = 0;
   2970  05E2  1088               	bcf	8,1	;volatile
   2971                           
-  2972                           ;pro_02_main.c: 461:             }
+  2972                           ;pro_02_main.c: 462:             }
   2973  05E3  28D9               	goto	l2191
   2974  05E4                     l2501:
   2975                           
-  2976                           ;pro_02_main.c: 463:                 CCP1CONbits.P1M = 0b11;
+  2976                           ;pro_02_main.c: 464:                 CCP1CONbits.P1M = 0b11;
   2977  05E4  30C0               	movlw	192
   2978  05E5  0497               	iorwf	23,f	;volatile
   2979  05E6                     l2503:
   2980                           
-  2981                           ;pro_02_main.c: 464:                 RD0 = 0;
+  2981                           ;pro_02_main.c: 465:                 RD0 = 0;
   2982  05E6  1008               	bcf	8,0	;volatile
   2983  05E7                     l2505:
   2984                           
-  2985                           ;pro_02_main.c: 465:                 RD1 = 1;
+  2985                           ;pro_02_main.c: 466:                 RD1 = 1;
   2986  05E7  1488               	bsf	8,1	;volatile
   2987  05E8  28D9               	goto	l2191
   2988  05E9                     l2509:
@@ -3980,7 +3980,7 @@ EEDATA             100      0       0       0        0.0%
 
 
 Microchip Technology PIC Macro Assembler V2.31 build 20201012212115 
-Symbol Table                                                                                   Fri Jun 04 10:35:19 2021
+Symbol Table                                                                                   Fri Jun 04 21:43:22 2021
 
                       _i 0076                        pc 0002             ___awdiv@sign 005A  
                      fsr 0004      ___wmul@multiplicand 0052                      l170 00B7  

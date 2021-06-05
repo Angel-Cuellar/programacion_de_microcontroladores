@@ -92,38 +92,38 @@ void __interrupt()isr(void){
     if (T0IF == 1){
         INTCONbits.T0IF = 0; // bajo la bandera del timer0 
         TMR0 = 206;          // reseteo el timer0 para que funcione a 0.1ms.
-        cont++; 
+        cont++;              // incremento la variable en 1
         if (cont > servo1) {
             RC0 = 0; 
         }
-        if (cont > servo2) {
-            RC1 = 0; 
-        }
+        if (cont > servo2) {    // si la variable contador supera el valor de 
+            RC1 = 0;            // de SERVO1, SERVO2 y SERVO3 entonces apago la
+        }                       // señal y entro en ciclo de descanso del PWM
         if (cont > servo3) {
             RC3 = 0; 
         }
         if (cont > 200) {
-            RC0 = 1;
-            RC1 = 1;
-            RC3 = 1; 
+            RC0 = 1;       // cuando llego a los 20ms que con 200 interrupiones
+            RC1 = 1;       // del TIMER0 entonces vuelco a encender la señal y 
+            RC3 = 1;       // reseteo en cero la variable CONT. 
             cont = 0;
         }
         ADCON0bits.GO = 1;  // activo para realiar una nueva conversion 
     }
     
     if (RBIF == 1){
-        if (RB0 == 0){  
-            CCP1CONbits.P1M = 0b01;    // girar a la derecha 
-            direccion = 1;
-            RD0 = 1; 
-            RD1 = 0;
+        if (RB0 == 0){                  // girar a la derecha "MODO FORWARD"
+            CCP1CONbits.P1M = 0b01;     // del PWM ENHANCED 
+            direccion = 1;              // me indica que gira a la derecha
+            RD0 = 1;            // led que me indica que gira a la derecha
+            RD1 = 0;            // led que me indica que gira a la izquierda
             
         }
-        if (RB1 == 0){
-            CCP1CONbits.P1M = 0b11;  // gira a la izquierda
-            direccion = 0; 
-            RD0 = 0; 
-            RD1 = 1;
+        if (RB1 == 0){                  // gira a la izquierda "MODO REVERSE"
+            CCP1CONbits.P1M = 0b11;     // del PWM ENHANCED 
+            direccion = 0;              // me indica que gira a la izquierda
+            RD0 = 0;           // led que me indica que gira a la derecha
+            RD1 = 1;           // led que me indica que gira a la izquierda
         }
     INTCONbits.RBIF = 0; // luego de todo esto, bajo la bandera de ON CHANGE. 
     }
@@ -135,11 +135,11 @@ void __interrupt()isr(void){
 
 void main(void) {
     
-ANSEL = 0b00001111;
+ANSEL = 0b00001111;    // pines del RA0-RA3 como entradas analogicas
 ANSELH = 0x00;
             
-TRISA = 0b00001111;
-TRISB = 0b00000011;
+TRISA = 0b00001111;    // pines del RA0-RA3 como entradas 
+TRISB = 0b00000011;    // pines RB0 y RB1 como entradas digitales 
 TRISC = 0b10000000;
 TRISD = 0x00; 
 
@@ -153,8 +153,8 @@ RD0 = 1; // inicializando el led de derecha
 // configuracion de PULL UP internos en PORTB///////////////////////////////////
 
 OPTION_REGbits.nRBPU = 0;
-IOCBbits.IOCB0 = 1; 
-IOCBbits.IOCB1 = 1;
+IOCBbits.IOCB0 = 1;             // configuracion de los PULL UP internos en los
+IOCBbits.IOCB1 = 1;             // pines RB0 y RB1
 WPUB = 0b00000011;
 
 /*  configuracion de EUSART ASINCRONO      */
@@ -219,7 +219,7 @@ OSCCONbits.SCS = 1;
 OPTION_REGbits.T0CS = 0; 
 OPTION_REGbits.PSA = 0;
 OPTION_REGbits.PS = 0b001; // configurando para utilizar un pre_escaler de 1:4
-TMR0= 206;
+TMR0= 206;                 // opera a 0.1 ms 
 
 /*  habilitando las banderas de interrupcion */
 
@@ -298,12 +298,12 @@ switch (valor) {
             TXREG = nota_6[i];
         }
         }
-        cantidad = (((servo1 - 4)*180)/15) ; 
-        unidades = 48; 
-        decenas = 48; 
-        centenas = 48; 
-        while (cantidad >= 100) {
-            cantidad = cantidad - 100; 
+        cantidad = (((servo1 - 4)*180)/15) ;    // proceso para hacer una 
+        unidades = 48;                          // divison que me permita dar el
+        decenas = 48;                    // el angulo actual del servo en forma 
+        centenas = 48;             // de valores decimales para que en la 
+        while (cantidad >= 100) {  // comnunicion serial aprecan en numeros de 
+            cantidad = cantidad - 100;    // la tabla ASCII. 
             centenas++; 
         }
         while (cantidad >= 10) {
@@ -313,12 +313,12 @@ switch (valor) {
         if (cantidad < 10) {
             unidades = unidades + cantidad;
         }
-        angulo[0] = centenas; 
-        angulo[1] = decenas;
-        angulo[2] = unidades;
+        angulo[0] = centenas;       // para los resultados a el ARRAY angulos
+        angulo[1] = decenas;        // para que se pueda mandar el valor del
+        angulo[2] = unidades;       // angulo en un mensaje de manera serial. 
         for (i = 0; i < strlen(angulo); i++) {
         __delay_ms(5);
-        if (TXIF == 1) {         // despliego el mensaje de la variable "nota_6"
+        if (TXIF == 1) {         // despliego el mensaje de la variable "angulo"
             TXREG = angulo[i];
         }
         }
@@ -341,9 +341,9 @@ switch (valor) {
         centenas = 48; 
         while (cantidad >= 100) {
             cantidad = cantidad - 100; 
-            centenas++; 
-        }
-        while (cantidad >= 10) {
+            centenas++;                       // mismo proceso de division para        
+        }                                     // para obtener el angulo
+        while (cantidad >= 10) {               
             cantidad = cantidad - 10; 
             decenas++;     
         }
@@ -351,11 +351,11 @@ switch (valor) {
             unidades = unidades + cantidad;
         }
         angulo[0] = centenas; 
-        angulo[1] = decenas;
-        angulo[2] = unidades;
+        angulo[1] = decenas;               // paso el valor del angulo en el
+        angulo[2] = unidades;              // array para enviarse 
         for (i = 0; i < strlen(angulo); i++) {
         __delay_ms(5);
-        if (TXIF == 1) {         // despliego el mensaje de la variable "nota_6"
+        if (TXIF == 1) {         // despliego el mensaje de la variable "angulo"
             TXREG = angulo[i];
         }
         }
@@ -376,7 +376,7 @@ switch (valor) {
         decenas = 48; 
         centenas = 48; 
         while (cantidad >= 100) {
-            cantidad = cantidad - 100; 
+            cantidad = cantidad - 100;        // se repite otra vez la division
             centenas++; 
         }
         while (cantidad >= 10) {
@@ -386,12 +386,12 @@ switch (valor) {
         if (cantidad < 10) {
             unidades = unidades + cantidad;
         }
-        angulo[0] = centenas; 
-        angulo[1] = decenas;
+        angulo[0] = centenas;             // paso el valor del angulo en el
+        angulo[1] = decenas;              // array para enviarse 
         angulo[2] = unidades;
         for (i = 0; i < strlen(angulo); i++) {
         __delay_ms(5);
-        if (TXIF == 1) {         // despliego el mensaje de la variable "nota_6"
+        if (TXIF == 1) {         // despliego el mensaje de la variable "angulo"
             TXREG = angulo[i];
         }
         }
@@ -403,14 +403,14 @@ switch (valor) {
     case('4'):
         for (i = 0; i < strlen(nota_9); i++) {
         __delay_ms(5);
-        if (TXIF == 1) {         // despliego el mensaje de la variable "nota_8"
+        if (TXIF == 1) {         // despliego el mensaje de la variable "nota_9"
             TXREG = nota_9[i];
         }
         }
         if (direccion == 1) {
             for (i = 0; i < strlen(right); i++) {
             __delay_ms(5);
-            if (TXIF == 1) {        // despliego el mensaje de la variable RIGHT
+            if (TXIF == 1) {      // despliego el mensaje de la variable "RIGHT"
                 TXREG = right[i];
             }
             }
@@ -418,7 +418,7 @@ switch (valor) {
         else {
             for (i = 0; i < strlen(left); i++) {
             __delay_ms(5);
-            if (TXIF == 1) {        // despliego el mensaje de la variable LEFT
+            if (TXIF == 1) {      // despliego el mensaje de la variable "LEFT"
                 TXREG = left[i];
             }
             }
@@ -428,7 +428,7 @@ switch (valor) {
         TXREG = '\n';
         for (i = 0; i < strlen(cambio); i++) {
             __delay_ms(5);
-            if (TXIF == 1) {        // despliego el mensaje de la variable LEFT
+            if (TXIF == 1) {    // despliego el mensaje de la variable "cambio"
                 TXREG = cambio[i];
         }
         }
@@ -440,29 +440,30 @@ switch (valor) {
         while (RCIF == 0) ; // me quedo quieto hasta recibir una señal 
         valor = RCREG;   // recibo los datos y los paso a la variable "valor"
         
-        if (valor == '1') {
-            for (i = 0; i < strlen(giro); i++) {
+        if (valor == '1') {                        // si VALOR = '1' entoces se
+            for (i = 0; i < strlen(giro); i++) {   // envia el mensaje de "giro"
                 __delay_ms(5);
-                if (TXIF == 1) {        // despliego el mensaje de la variable LEFT
+                if (TXIF == 1) {        
                     TXREG = giro[i];
             }
             }
             
-            TXREG = '\n';          // hago dos saltos de linea para tener un espacio
+            TXREG = '\n';     // hago dos saltos de linea para tener un espacio
             __delay_ms(5);         // vacio entre cada mensaje
             TXREG = '\n';
             
             while (RCIF == 0) ; // me quedo quieto hasta recibir una señal 
-            valor = RCREG;   // recibo los datos y los paso a la variable "valor"
-            if (valor == '1') {
-                CCP1CONbits.P1M = 0b01; //horario
+            valor = RCREG;   //recibo los datos y los paso a la variable "valor"
+            
+            if (valor == '1') {    // si VALOR = '1' entonces cambio el sentido
+                CCP1CONbits.P1M = 0b01; //del PWM ENHANCED a FORWARD 
                 RD0 = 1; 
-                RD1 = 0;
+                RD1 = 0;                // enciendo el led de giro a la derecha
             }
             else {
-                CCP1CONbits.P1M = 0b11; //ante-horario
-                RD0 = 0; 
-                RD1 = 1;
+                CCP1CONbits.P1M = 0b11;   // si VALOR no es '1' es '0' cambio el 
+                RD0 = 0;                // sentido del PWM ENHANCED a REVERSE
+                RD1 = 1;               // enciendo el led de giro a la izuierda
             }
         }
    break;   

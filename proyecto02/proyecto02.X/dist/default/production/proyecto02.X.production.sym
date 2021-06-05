@@ -243,7 +243,7 @@ text1 1F22 1F61 CODE 1F22 0
 inittext 1EFC 1F21 CODE 1EFC 0
 %locals
 dist/default/production\proyecto02.X.production.o
-C:\Users\angel\AppData\Local\Temp\shoc.s
+C:\Users\angel\AppData\Local\Temp\s4q4.s
 860 F 0 CODE 0
 863 F 0 CODE 0
 1027 F 0 CODE 0
@@ -540,15 +540,15 @@ pro_02_main.c
 453 5C7 0 CODE 0
 455 5CB 0 CODE 0
 456 5CF 0 CODE 0
-457 5D6 0 CODE 0
-458 5DD 0 CODE 0
-459 5E1 0 CODE 0
-460 5E2 0 CODE 0
-461 5E3 0 CODE 0
-463 5E4 0 CODE 0
-464 5E6 0 CODE 0
-465 5E7 0 CODE 0
-469 5E9 0 CODE 0
+458 5D6 0 CODE 0
+459 5DD 0 CODE 0
+460 5E1 0 CODE 0
+461 5E2 0 CODE 0
+462 5E3 0 CODE 0
+464 5E4 0 CODE 0
+465 5E6 0 CODE 0
+466 5E7 0 CODE 0
+470 5E9 0 CODE 0
 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\strlen.c
 4 F91 0 CODE 0
 8 F91 0 CODE 0

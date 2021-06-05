@@ -3120,6 +3120,7 @@ switch (valor) {
 
             while (RCIF == 0) ;
             valor = RCREG;
+
             if (valor == '1') {
                 CCP1CONbits.P1M = 0b01;
                 RD0 = 1;

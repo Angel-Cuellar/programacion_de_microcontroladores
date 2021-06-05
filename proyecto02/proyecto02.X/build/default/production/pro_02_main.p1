@@ -2214,49 +2214,49 @@ Version 4.0 HI-TECH Software Intermediate Code
 "456
 [; ;pro_02_main.c: 456:             valor = RCREG;
 [e = _valor -> _RCREG `i ]
-"457
-[; ;pro_02_main.c: 457:             if (valor == '1') {
+"458
+[; ;pro_02_main.c: 458:             if (valor == '1') {
 [e $ ! == -> _valor `ui -> 49 `ui 281  ]
 {
-"458
-[; ;pro_02_main.c: 458:                 CCP1CONbits.P1M = 0b01;
-[e = . . _CCP1CONbits 0 2 -> -> 1 `i `uc ]
 "459
-[; ;pro_02_main.c: 459:                 RD0 = 1;
-[e = _RD0 -> -> 1 `i `b ]
+[; ;pro_02_main.c: 459:                 CCP1CONbits.P1M = 0b01;
+[e = . . _CCP1CONbits 0 2 -> -> 1 `i `uc ]
 "460
-[; ;pro_02_main.c: 460:                 RD1 = 0;
-[e = _RD1 -> -> 0 `i `b ]
+[; ;pro_02_main.c: 460:                 RD0 = 1;
+[e = _RD0 -> -> 1 `i `b ]
 "461
-[; ;pro_02_main.c: 461:             }
+[; ;pro_02_main.c: 461:                 RD1 = 0;
+[e = _RD1 -> -> 0 `i `b ]
+"462
+[; ;pro_02_main.c: 462:             }
 }
 [e $U 282  ]
-"462
-[; ;pro_02_main.c: 462:             else {
+"463
+[; ;pro_02_main.c: 463:             else {
 [e :U 281 ]
 {
-"463
-[; ;pro_02_main.c: 463:                 CCP1CONbits.P1M = 0b11;
-[e = . . _CCP1CONbits 0 2 -> -> 3 `i `uc ]
 "464
-[; ;pro_02_main.c: 464:                 RD0 = 0;
-[e = _RD0 -> -> 0 `i `b ]
+[; ;pro_02_main.c: 464:                 CCP1CONbits.P1M = 0b11;
+[e = . . _CCP1CONbits 0 2 -> -> 3 `i `uc ]
 "465
-[; ;pro_02_main.c: 465:                 RD1 = 1;
-[e = _RD1 -> -> 1 `i `b ]
+[; ;pro_02_main.c: 465:                 RD0 = 0;
+[e = _RD0 -> -> 0 `i `b ]
 "466
-[; ;pro_02_main.c: 466:             }
+[; ;pro_02_main.c: 466:                 RD1 = 1;
+[e = _RD1 -> -> 1 `i `b ]
+"467
+[; ;pro_02_main.c: 467:             }
 }
 [e :U 282 ]
-"467
-[; ;pro_02_main.c: 467:         }
+"468
+[; ;pro_02_main.c: 468:         }
 }
 [e :U 272 ]
-"468
-[; ;pro_02_main.c: 468:    break;
-[e $U 190  ]
 "469
-[; ;pro_02_main.c: 469: }
+[; ;pro_02_main.c: 469:    break;
+[e $U 190  ]
+"470
+[; ;pro_02_main.c: 470: }
 }
 [e $U 190  ]
 [e :U 191 ]
@@ -2266,16 +2266,16 @@ Version 4.0 HI-TECH Software Intermediate Code
  , $ -> -> 52 `ui `i 246
  190 ]
 [e :U 190 ]
-"471
-[; ;pro_02_main.c: 471: }
+"472
+[; ;pro_02_main.c: 472: }
 }
 [e :U 159 ]
 [e $U 160  ]
 [e :U 161 ]
-"472
-[; ;pro_02_main.c: 472: return;
-[e $UE 155  ]
 "473
-[; ;pro_02_main.c: 473: }
+[; ;pro_02_main.c: 473: return;
+[e $UE 155  ]
+"474
+[; ;pro_02_main.c: 474: }
 [e :UE 155 ]
 }
